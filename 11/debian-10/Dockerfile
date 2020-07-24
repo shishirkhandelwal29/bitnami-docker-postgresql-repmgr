@@ -32,6 +32,6 @@ ENV BITNAMI_APP_NAME="postgresql-repmgr" \
 
 EXPOSE 5432
 
-USER 1001
+USER ROOT
 ENTRYPOINT [ "/opt/bitnami/scripts/postgresql-repmgr/entrypoint.sh" ]
 CMD [ "/opt/bitnami/scripts/postgresql-repmgr/run.sh" ]
